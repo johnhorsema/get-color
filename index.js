@@ -4,6 +4,8 @@ var app = express();
 var Vibrant = require('node-vibrant');
 var getColors = require('get-image-colors');
 
+var port = process.env.PORT || 8080;
+
 function generateCircle(color){
 	return '<div style="display: inline-block; border-radius: 5rem; width: 20px; height: 20px; background-color: rgb('+ color +')"></div>';
 }
@@ -37,4 +39,4 @@ app.get('/getcolor', function (req, res, next) {
     });
 });
 
-app.listen(3000);
+app.listen(port);
