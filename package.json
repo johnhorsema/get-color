@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4",
+    "get-image-colors": "^1.8.1",
     "node-vibrant": "^3.0.0-alpha.2"
   }
 }
